@@ -1,0 +1,46 @@
+@import "styles/breakpoints.scss";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.content {
+  margin-left: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.content,
+.imageContainer {
+  flex-shrink: 0;
+  flex-basis: 48%;
+}
+
+.property {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.value {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+@media (max-width: $sm) {
+  .content,
+  .imageContainer {
+    flex-basis: 100%;
+  }
+
+  .content {
+    margin-left: 20;
+  }
+}

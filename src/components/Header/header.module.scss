@@ -1,0 +1,41 @@
+@import "styles/breakpoints.scss";
+@import "styles/theme.scss";
+
+.container {
+  align-items: center;
+  background-color: $primaryBackgroundColorDark;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  position: relative;
+}
+
+.header {
+  color: $primaryTextColor;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.backLink {
+  color: $primaryTextColor;
+  font-size: 24px;
+  left: 20px;
+  position: absolute;
+  text-decoration: underline;
+  top: 20px;
+}
+
+@media (max-width: $sm) {
+  .container {
+    height: 150px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .backLink {
+    font-size: 18px;
+  }
+}
